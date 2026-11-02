@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class PlayerDelivererMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Refer to this when getting player inputs so we can switch the player controls
+    private PlayerInputConnector inputConnector;
+
     void Start()
     {
-        
+        inputConnector = gameObject.GetComponent<PlayerInputConnector>();
     }
 
     // Update is called once per frame

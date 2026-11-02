@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class PlayerCatcherMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private PlayerInputConnector inputConnector;
+
     void Start()
     {
-        
+        inputConnector = gameObject.GetComponent<PlayerInputConnector>();
     }
 
     // Update is called once per frame
