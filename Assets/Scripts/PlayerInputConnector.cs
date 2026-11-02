@@ -16,11 +16,27 @@ public class PlayerInputConnector : MonoBehaviour
     public bool ButtonPressed()
     {
         // WasPressedThisFrame may be the incorrect way to go about it tbh
-        if (playerNumber == 1 && controls.Player1.Any.WasPressedThisFrame())
+        if (playerNumber == 1 && controls.Player1.Any.WasPressedThisDynamicUpdate())
         {
             return true;
         }
-        if (playerNumber == 2 && controls.Player2.Any.WasPressedThisFrame())
+        if (playerNumber == 2 && controls.Player2.Any.WasPressedThisDynamicUpdate())
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    // Checks for the first input of the stick
+    // For the dash only player control
+    public bool StickPressed()
+    {
+        if (playerNumber == 1 && controls.Player1.Move.WasPressedThisDynamicUpdate())
+        {
+            return true;
+        }
+        if (playerNumber == 2 && controls.Player2.Move.WasPressedThisDynamicUpdate())
         {
             return true;
         }
