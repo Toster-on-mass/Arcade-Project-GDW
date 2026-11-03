@@ -4,6 +4,8 @@ using UnityEngine;
 public class PlayerCatcherMovement : MonoBehaviour
 {
 
+    public GameObject prototypeChargeDisplay;
+
     public float dashCharge = 0.0f;
     public float maxDashCharge = 100.0f;
     public float dashIncrease = 10.0f; // How much the dash charge increases when button is pressed
@@ -32,6 +34,8 @@ public class PlayerCatcherMovement : MonoBehaviour
             Vector2 inputDir = inputConnector.GetPlayerInputDirection();
             BoostPlayer(new Vector3(inputDir.x, 0, inputDir.y));
         }
+
+        prototypeChargeDisplay.transform.localScale = new Vector3(0.001f * dashCharge, prototypeChargeDisplay.transform.localScale.y, prototypeChargeDisplay.transform.localScale.z);
 
         // Make dash charge fade over time later
 
