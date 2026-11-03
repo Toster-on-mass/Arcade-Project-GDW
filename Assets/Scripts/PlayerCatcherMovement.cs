@@ -66,6 +66,7 @@ public class PlayerCatcherMovement : MonoBehaviour
 
     void BoostPlayer(Vector3 direction)
     {
+        playerRB.linearVelocity = new Vector3();
         playerRB.AddForce(direction * dashCharge * dashBoost, ForceMode.Impulse);
         dashCharge = 0.0f;
     }
