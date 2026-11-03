@@ -6034,7 +6034,7 @@ MonoBehaviour:
   dashCharge: 0
   maxDashCharge: 100
   dashIncrease: 18
-  dashBoost: 0.55
+  dashBoost: 0.4
   dashDrain: 30
 --- !u!54 &1318323034
 Rigidbody:
@@ -6212,6 +6212,7 @@ GameObject:
   - component: {fileID: 2101718783}
   - component: {fileID: 2101718785}
   - component: {fileID: 2101718786}
+  - component: {fileID: 2101718787}
   m_Layer: 0
   m_Name: Player Deliverer
   m_TagString: Deliverer
@@ -6379,6 +6380,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40dd58fd56ac52b47b941a6f1568ff6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDelivererDeath
+  packageManager: {fileID: 850737910}
+  packageCollection: {fileID: 2101718787}
+--- !u!114 &2101718787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101718778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ac8811a254c874db62afd0b6b74f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPackageCollection
+  packagesCollected: 0
 --- !u!1001 &37472317727239199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6444,6 +6460,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1158206779243370579, guid: 02b8fb04884076141a560ef5b646c550, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.79
+      objectReference: {fileID: 0}
     - target: {fileID: 2237975599323914892, guid: 02b8fb04884076141a560ef5b646c550, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.615

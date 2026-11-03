@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerDelivererDeath : MonoBehaviour
 {
     public PackageManager packageManager;
+    public PlayerPackageCollection packageCollection;
     private Vector3 startPos;
     void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerDelivererDeath : MonoBehaviour
         {
             transform.position = startPos;
             packageManager.ResetPackages();
+            packageCollection.ResetCollectedPackages();
         }
     }
 }
