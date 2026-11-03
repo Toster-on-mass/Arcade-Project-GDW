@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerDelivererDeath : MonoBehaviour
 {
+    public PackageManager packageManager;
     private Vector3 startPos;
     void Start()
     {
@@ -19,6 +20,7 @@ public class PlayerDelivererDeath : MonoBehaviour
         if (collision.gameObject.CompareTag("Catcher"))
         {
             transform.position = startPos;
+            packageManager.ResetPackages();
         }
     }
 }
