@@ -10,6 +10,7 @@ public class PlayerCatcherMovement : MonoBehaviour
     public float maxDashCharge = 100.0f;
     public float dashIncrease = 10.0f; // How much the dash charge increases when button is pressed
     public float dashBoost = 1000.0f;
+    public float dashDrain = 10.0f; // How much the charge drains every second
 
 
     // Refer to this when getting player inputs so we can switch the player controls
@@ -29,6 +30,15 @@ public class PlayerCatcherMovement : MonoBehaviour
         {
             IncreaseDashCharge(dashIncrease);
         }
+        else // Uncharges the dash
+        {
+            dashCharge -= dashDrain * Time.deltaTime;
+            if (dashCharge < 0)
+            {
+                dashCharge = 0;
+            }
+        }
+        
         if (inputConnector.StickPressed())
         {
             Vector2 inputDir = inputConnector.GetPlayerInputDirection();
@@ -37,7 +47,6 @@ public class PlayerCatcherMovement : MonoBehaviour
 
         prototypeChargeDisplay.transform.localScale = new Vector3(0.001f * dashCharge, prototypeChargeDisplay.transform.localScale.y, prototypeChargeDisplay.transform.localScale.z);
 
-        // Make dash charge fade over time later
 
     }
 

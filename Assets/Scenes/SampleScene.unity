@@ -1146,6 +1146,7 @@ MonoBehaviour:
   maxDashCharge: 100
   dashIncrease: 10
   dashBoost: 0.7
+  dashDrain: 10
 --- !u!54 &1318323034
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1484,6 +1485,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2237975599323914892, guid: 02b8fb04884076141a560ef5b646c550, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.615
+      objectReference: {fileID: 0}
     - target: {fileID: 4898198830149955450, guid: 02b8fb04884076141a560ef5b646c550, type: 3}
       propertyPath: m_Name
       value: Prototype Map
@@ -1527,6 +1532,10 @@ PrefabInstance:
     - target: {fileID: 5572190678550135751, guid: 02b8fb04884076141a560ef5b646c550, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206646707035581482, guid: 02b8fb04884076141a560ef5b646c550, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.88
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
