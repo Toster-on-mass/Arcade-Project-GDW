@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - Deliverer
   - Catcher
+  - Package
+  - Delivery Spot
   layers:
   - Default
   - TransparentFX
