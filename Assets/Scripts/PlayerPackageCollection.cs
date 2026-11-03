@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerPackageCollection : MonoBehaviour
 {
+    public ScoreManager scoreManager;
     public int packagesCollected = 0;
     void Start()
     {
@@ -20,6 +21,11 @@ public class PlayerPackageCollection : MonoBehaviour
         {
             Destroy(other.gameObject);
             packagesCollected++;
+        }
+        else if (other.CompareTag("Delivery Spot"))
+        {
+            scoreManager.IncreasePackagesDelivered(packagesCollected);
+            ResetCollectedPackages();
         }
     }
 }
