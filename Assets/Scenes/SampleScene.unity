@@ -5981,9 +5981,9 @@ MonoBehaviour:
   prototypeChargeDisplay: {fileID: 354278658}
   dashCharge: 0
   maxDashCharge: 100
-  dashIncrease: 10
+  dashIncrease: 18
   dashBoost: 0.7
-  dashDrain: 10
+  dashDrain: 30
 --- !u!54 &1318323034
 Rigidbody:
   m_ObjectHideFlags: 0
