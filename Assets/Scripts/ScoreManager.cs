@@ -1,8 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
     public PackageManager packageManager;
+
+    public TextMeshProUGUI textPackages;
+    public TextMeshProUGUI textCaught;
 
     public int packagesDelivered = 0;
     public int timesCaught = 0;
@@ -14,6 +18,7 @@ public class ScoreManager : MonoBehaviour
         {
             packagesDelivered += amount;
             packageManager.ResetPackages();
+            textPackages.text = "Packages Got: " + packagesDelivered;
         }
         
     }
@@ -21,5 +26,6 @@ public class ScoreManager : MonoBehaviour
     public void IncreaseTimesCaught(int amount)
     {
         timesCaught += amount;
+        textCaught.text = "Times Caught: " + timesCaught;
     }
 }
