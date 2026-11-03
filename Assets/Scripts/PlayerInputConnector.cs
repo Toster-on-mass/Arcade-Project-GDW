@@ -55,7 +55,7 @@ public class PlayerInputConnector : MonoBehaviour
             return controls.Player2.Move.ReadValue<Vector2>();
         }
 
-
+        Debug.Log("NO CORRECT PLAYER NUMBER FOUND");
         return new Vector2();
     }
 
