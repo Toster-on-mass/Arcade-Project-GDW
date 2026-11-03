@@ -25,8 +25,6 @@ public class PlayerCatcherMovement : MonoBehaviour
         // Charges the dash
         if (inputConnector.ButtonPressed())
         {
-            Debug.Log("Message 1"); // Shows inputs are working
-            Debug.Log(dashCharge);
             IncreaseDashCharge(dashIncrease);
         }
         if (inputConnector.StickPressed())
@@ -34,6 +32,14 @@ public class PlayerCatcherMovement : MonoBehaviour
             Vector2 inputDir = inputConnector.GetPlayerInputDirection();
             BoostPlayer(new Vector3(inputDir.x, 0, inputDir.y));
         }
+
+        // Make dash charge fade over time later
+
+    }
+
+    void FixedUpdate()
+    {
+        
     }
 
     void IncreaseDashCharge(float amount)
@@ -47,10 +53,7 @@ public class PlayerCatcherMovement : MonoBehaviour
 
     void BoostPlayer(Vector3 direction)
     {
-        Debug.Log("Message 2"); // Shows this function is being run
-        Debug.Log(dashCharge);
         playerRB.AddForce(direction * dashCharge * dashBoost, ForceMode.Impulse);
         dashCharge = 0.0f;
-        Debug.Log(dashCharge);
     }
 }

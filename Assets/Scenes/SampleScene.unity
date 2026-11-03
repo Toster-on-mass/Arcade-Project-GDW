@@ -899,6 +899,7 @@ GameObject:
   - component: {fileID: 1318323033}
   - component: {fileID: 1318323032}
   - component: {fileID: 1318323034}
+  - component: {fileID: 1318323035}
   m_Layer: 0
   m_Name: Player Catcher
   m_TagString: Untagged
@@ -913,7 +914,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318323027}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ba40c7bcb36f68042b2ef5edba8fc978, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -925,10 +926,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.48
+  m_Height: 4.89
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.000000059604645, y: 0.0000104559895, z: -0.00000011920929}
 --- !u!23 &1318323029
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1029,6 +1030,7 @@ MonoBehaviour:
   dashCharge: 0
   maxDashCharge: 100
   dashIncrease: 10
+  dashBoost: 0.7
 --- !u!54 &1318323034
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1054,8 +1056,29 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!65 &1318323035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318323027}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.7, y: 1.9999999, z: 0.7}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1853937306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1205,7 @@ GameObject:
   - component: {fileID: 2101718779}
   - component: {fileID: 2101718784}
   - component: {fileID: 2101718783}
+  - component: {fileID: 2101718785}
   m_Layer: 0
   m_Name: Player Deliverer
   m_TagString: Untagged
@@ -1309,6 +1333,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e92cc1fbdc0a07459841f4f31f451d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDelivererMovement
+--- !u!54 &2101718785
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101718778}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1001 &3113962351043176507
 PrefabInstance:
   m_ObjectHideFlags: 0

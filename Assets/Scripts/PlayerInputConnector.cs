@@ -52,7 +52,7 @@ public class PlayerInputConnector : MonoBehaviour
         }
         if (playerNumber == 2)
         {
-            return controls.Player1.Move.ReadValue<Vector2>();
+            return controls.Player2.Move.ReadValue<Vector2>();
         }
 
 
