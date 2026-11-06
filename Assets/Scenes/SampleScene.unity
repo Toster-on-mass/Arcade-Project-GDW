@@ -6817,6 +6817,7 @@ MonoBehaviour:
   dashBoost: 0.45
   dashDrain: 45
   dashHoldDrainMult: 150
+  overchargePercent: 0.25
 --- !u!54 &1318323034
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7306,6 +7307,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDelivererMovement
   playerSpeed: 10
+  playerDashSpeed: 20
+  dashLengthCooldown: 0.3
+  dashCooldown: 0.5
+  movementState: 0
 --- !u!54 &2101718785
 Rigidbody:
   m_ObjectHideFlags: 0
