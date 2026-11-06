@@ -267,8 +267,8 @@ MonoBehaviour:
   textPressToRestart: {fileID: 350965640}
   packagesDelivered: 0
   timesCaught: 0
-  packagesNeededForWin: 10
-  timesCaughtNeededForWin: 10
+  packagesNeededForWin: 5
+  timesCaughtNeededForWin: 5
 --- !u!4 &230145739
 Transform:
   m_ObjectHideFlags: 0
@@ -6816,6 +6816,7 @@ MonoBehaviour:
   dashIncrease: 22
   dashBoost: 0.45
   dashDrain: 45
+  dashHoldDrainMult: 150
 --- !u!54 &1318323034
 Rigidbody:
   m_ObjectHideFlags: 0
