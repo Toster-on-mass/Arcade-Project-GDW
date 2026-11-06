@@ -7307,9 +7307,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDelivererMovement
   playerSpeed: 10
-  playerDashSpeed: 20
-  dashLengthCooldown: 0.3
-  dashCooldown: 0.5
+  playerDashSpeed: 30
+  dashLengthCooldown: 0.08
+  dashCooldown: 0.7
+  debugDashMaterials:
+  - {fileID: 2100000, guid: b34adbe07cce5054e832f7d0db14fe8e, type: 2}
+  - {fileID: 2100000, guid: 89a6da0b03e1ad643becee9a63dbefa9, type: 2}
+  debugDashObject: {fileID: 2101718780}
   movementState: 0
 --- !u!54 &2101718785
 Rigidbody:
