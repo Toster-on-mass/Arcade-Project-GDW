@@ -39,10 +39,10 @@ public class ScoreManager : MonoBehaviour
         {
             packagesDelivered += amount;
             packageManager.ResetPackages();
-            textPackages.text = "Packages Got: " + packagesDelivered;
+            textPackages.text = "Packages Delivered: " + packagesDelivered;
             if (packagesDelivered >= packagesNeededForWin)
             {
-                gameWon.text = "Deliverer wins!";
+                gameWon.text = "Deliverer Wins!";
                 gameOver = true;
                 textPressToRestart.gameObject.SetActive(true);
             }
@@ -59,7 +59,7 @@ public class ScoreManager : MonoBehaviour
 
             if (timesCaught >= timesCaughtNeededForWin)
             {
-                gameWon.text = "Catcher wins!";
+                gameWon.text = "Catcher Wins!";
                 gameOver = true;
                 textPressToRestart.gameObject.SetActive(true);
             }

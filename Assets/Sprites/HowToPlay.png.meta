@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8550e098870fee4488109e368adc4091
+guid: 90a15fc5b64606e4f95beeae4418c576
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4020501567191045596
-    second: HowToPlayMenu_0
+      213: -27307904797611606
+    second: HowToPlay_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HowToPlayMenu_0
+      name: HowToPlay_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42a2dac402f4438c0800000000000000
-      internalID: -4020501567191045596
+      spriteID: aa96af2fa9bfe9ff0800000000000000
+      internalID: -27307904797611606
       vertices: []
       indices: 
       edges: []

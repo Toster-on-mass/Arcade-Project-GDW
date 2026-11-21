@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 353522947}
   - component: {fileID: 353522946}
   m_Layer: 5
-  m_Name: TextPackagesGot
+  m_Name: TextPackagesDelivered
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -932,7 +932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 203.95}
+  m_AnchoredPosition: {x: 0.000015259, y: 207.8}
   m_SizeDelta: {x: 353.6021, y: 41.4666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &353522946
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Packages Got: 0'
+  m_text: 'Packages Delivered: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
