@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1e5a6fbc3fab5f64d95ea09c762d18e1
+guid: 561471ba406c2c546ace4b3b67400a7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -198938125430884413
-    second: Menu_0
+      213: -3451699440861859892
+    second: MainMenu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu_0
+      name: MainMenu_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c7f86534da3d3df0800000000000000
-      internalID: -198938125430884413
+      spriteID: ccfa30c75a91910d0800000000000000
+      internalID: -3451699440861859892
       vertices: []
       indices: 
       edges: []
